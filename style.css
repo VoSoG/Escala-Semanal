@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.imagens {
+    display: flex;
+}
+
+img {
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    word-break: break-word;
+}
+
+td {
+    background-color: #009688;
+    color: white;
+}
+
+th {
+    background-color: #009688;
+    color: white;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.circle.azul {
+    background-color: blue;
+}
+
+.circle.roxa {
+    background-color: purple;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.separacao p {
+    margin: 10px;
+    text-align: center;
+}
+
+.dia-branco, .dia-azul, .dia-roxo {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.dia-branco {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.dia-azul {
+    background-color: blue;
+}
+
+.dia-roxo {
+    background-color: purple;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .detalhes {
+        padding: 10px;
+    }
+
+    .separacao {
+        flex-direction: column;
+    }
+
+    .dia-branco, .dia-azul, .dia-roxo {
+        font-size: 12px;
+        padding: 5px;
+        margin: 3px 0;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    .separacao {
+        flex-direction: column;
+    }
+}
